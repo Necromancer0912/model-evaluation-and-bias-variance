@@ -1,0 +1,81 @@
+"""
+Model Evaluation and Diagnostics From Scratch (`src/`).
+
+Pure NumPy implementation of Stratified K-Fold Cross-Validation, Monte Carlo
+Bias-Variance decomposition, ROC-AUC, PR-AUC, and calibration diagnostics.
+"""
+
+from .diagnostics_engine import (
+    LinearRegressionScratch,
+    LogisticRegressionScratch,
+    PolynomialFeaturesScratch,
+    StratifiedKFoldScratch,
+    bias_variance_monte_carlo,
+    calibration_curve_scratch,
+    confusion_matrix_scratch,
+    pr_curve_scratch,
+    precision_recall_fbeta_scratch,
+    roc_curve_scratch,
+    run_diagnostics_verification,
+    train_test_split_scratch,
+)
+from .plot_theme import (
+    AMBER,
+    BG_AXES,
+    BG_CANVAS,
+    CLASS_COLORS,
+    CMAP_DECISION,
+    CMAP_MULTICLASS,
+    CMAP_SURFACE,
+    CORAL,
+    CYAN,
+    EMERALD,
+    MAGENTA,
+    PALETTE,
+    PURPLE,
+    SLATE_BLUE,
+    TEXT_MUTED,
+    TEXT_PRIMARY,
+    apply_github_dark_style,
+    plot_decision_boundary,
+    plot_loss_landscape,
+    save_fig,
+    style_3d_axis,
+)
+
+__all__ = [
+    "train_test_split_scratch",
+    "StratifiedKFoldScratch",
+    "bias_variance_monte_carlo",
+    "confusion_matrix_scratch",
+    "precision_recall_fbeta_scratch",
+    "roc_curve_scratch",
+    "pr_curve_scratch",
+    "calibration_curve_scratch",
+    "PolynomialFeaturesScratch",
+    "LinearRegressionScratch",
+    "LogisticRegressionScratch",
+    "run_diagnostics_verification",
+    "apply_github_dark_style",
+    "style_3d_axis",
+    "plot_decision_boundary",
+    "plot_loss_landscape",
+    "save_fig",
+    "BG_CANVAS",
+    "BG_AXES",
+    "TEXT_PRIMARY",
+    "TEXT_MUTED",
+    "CYAN",
+    "CORAL",
+    "AMBER",
+    "PURPLE",
+    "SLATE_BLUE",
+    "EMERALD",
+    "MAGENTA",
+    "PALETTE",
+    "CLASS_COLORS",
+    "CMAP_DECISION",
+    "CMAP_SURFACE",
+    "CMAP_MULTICLASS",
+]
+
